@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 RUN apt-get update -y
-RUN apt-get install -y git libkrb5-dev libcairo2-dev
+RUN apt-get install -y apt-utils git libkrb5-dev libcairo2-dev
 RUN apt-get install -y libjpeg8-dev libpango1.0-dev
 RUN apt-get install -y libgif-dev build-essential
 RUN apt-get install -y openjdk-8-jre
@@ -10,7 +10,7 @@ RUN echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiver
 RUN apt-get update -y
 RUN apt-get install -y mongodb-org
 RUN apt-get install -y wget
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+CMD wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 CMD nvm install 6
 CMD npm install -g bower
 CMD npm install -g gulp
