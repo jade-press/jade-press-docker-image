@@ -3,6 +3,7 @@ RUN apt-get update -y
 RUN apt-get install -y apt-utils git libkrb5-dev libcairo2-dev
 RUN apt-get install -y libjpeg8-dev libpango1.0-dev
 RUN apt-get install -y libgif-dev build-essential
+RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y g++ wget
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 RUN echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.2.list
