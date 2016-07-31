@@ -20,4 +20,3 @@ CMD cp config-sample.js config.js
 CMD gulp install
 CMD bower install
 CMD npm install
-node app
