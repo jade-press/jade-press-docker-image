@@ -19,4 +19,4 @@ RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.s
 RUN source ~/.nvm/nvm.sh; \
     nvm install 6.3.1 \
     nvm use 6.3.1;
-RUN npm install -g bower gulp
+RUN /root/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/npm install -g bower gulp
